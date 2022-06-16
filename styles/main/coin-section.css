@@ -1,0 +1,136 @@
+.floating-coin {
+  position: absolute;
+}
+
+.floating-coin-left {
+  left: -20%;
+  top: 68%;
+  -webkit-animation: cointossleft 2s linear infinite alternate;
+  -moz-animation: cointossleft 2s linear infinite alternate;
+  animation: cointossleft 2s linear infinite alternate;
+}
+
+.floating-coin-right {
+  top: 78%;
+  right: 0%;
+  overflow: hidden;
+  -webkit-animation: cointossright 1.4s linear infinite alternate;
+  -moz-animation: cointossright 1.4s linear infinite alternate;
+  animation: cointossright 1.4s linear infinite alternate;
+}
+
+.coin-hold {
+  height: 20vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: -1;
+}
+
+.spot-ligh-hold {
+  position: absolute;
+  bottom: -50px;
+  display: flex;
+  justify-content: center;
+  -webkit-animation: floodlight 20s linear infinite;
+  -moz-animation: floodlight 20s linear infinite;
+  animation: floodlight 20s linear infinite;
+}
+
+.spot-light {
+  position: absolute;
+  transform-origin: bottom;
+  bottom: 50%;
+  z-index: -1;
+}
+
+.spot-light:nth-child(1) {
+  transform: rotate(calc(36deg));
+}
+
+.spot-light:nth-child(2) {
+  transform: rotate(72deg);
+}
+
+.spot-light:nth-child(3) {
+  transform: rotate(108deg);
+}
+
+.spot-light:nth-child(4) {
+  transform: rotate(144deg);
+}
+
+.spot-light:nth-child(5) {
+  transform: rotate(180deg);
+}
+
+.spot-light:nth-child(6) {
+  transform: rotate(216deg);
+}
+
+.spot-light:nth-child(7) {
+  transform: rotate(252deg);
+}
+
+.spot-light:nth-child(8) {
+  transform: rotate(288deg);
+}
+
+.spot-light:nth-child(9) {
+  transform: rotate(324deg);
+}
+
+@-moz-keyframes floodlight {
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes floodlight {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes floodlight {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes cointossleft {
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+@keyframes cointossright {
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .floating-coin-left {
+    left: 15%;
+  }
+
+  .floating-coin-right {
+    right: 10%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .floating-coin-left {
+    left: 20%;
+  }
+
+  .floating-coin-right {
+    right: 20%;
+  }
+}

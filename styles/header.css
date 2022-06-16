@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    padding: 15px 6rem;
+  }
+}
