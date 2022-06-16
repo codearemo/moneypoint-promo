@@ -3,6 +3,12 @@
 main {
   text-align: center;
   padding: 20px;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+
+.show-main {
+  opacity: 1;
 }
 
 .main-title {
@@ -11,6 +17,12 @@ main {
   font-family: 'Poppins', sans-serif;
   line-height: 2rem;
   display: inline-block;
+  transition: all 0.45s cubic-bezier(0.19, -0.36, 0, 0.07) 0.38s;
+}
+
+.hide {
+  transform: translateY(40px);
+  opacity: 0;
 }
 
 .bolder-title {
@@ -19,6 +31,7 @@ main {
 
 .sub-title-hold {
   margin-top: 2rem;
+  transition: all 0.45s cubic-bezier(0.19, -0.36, 0, 0.07) 0.38s;
 }
 
 .sub-title {
@@ -38,6 +51,7 @@ main {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.39) -213.5%, rgba(255, 255, 255, 0) 100%);
   box-shadow: inset 0px -1px 11px rgba(255, 255, 255, 0.17), inset 0px 2px 0px rgba(255, 255, 255, 0.24);
   border-radius: 8px;
+  transition: all 0.2s linear 0.25s;
 }
 
 .instructions-hold>p {
@@ -87,6 +101,7 @@ li span {
   border-radius: 4px;
   display: inline-flex;
   align-items: center;
+  transition: all 0.2s linear 0.2s;
 }
 
 .cta-btn span {

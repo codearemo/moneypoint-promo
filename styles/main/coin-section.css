@@ -1,5 +1,6 @@
 .floating-coin {
   position: absolute;
+  transition: all 0.2s linear;
 }
 
 .floating-coin-left {
@@ -29,6 +30,7 @@
   align-items: flex-end;
   justify-content: center;
   z-index: -1;
+  transition: all 0.2s linear;
 }
 
 .spot-ligh-hold {
