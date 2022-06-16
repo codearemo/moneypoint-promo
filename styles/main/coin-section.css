@@ -1,10 +1,11 @@
 .floating-coin {
   position: absolute;
   transition: all 0.2s linear;
+  width: 60px;
 }
 
 .floating-coin-left {
-  left: -20%;
+  left: -10%;
   top: 68%;
   -webkit-animation: cointossleft 2s linear infinite alternate;
   -moz-animation: cointossleft 2s linear infinite alternate;
@@ -14,14 +15,12 @@
 .floating-coin-right {
   top: 78%;
   right: 0%;
-  overflow: hidden;
   -webkit-animation: cointossright 1.4s linear infinite alternate;
   -moz-animation: cointossright 1.4s linear infinite alternate;
   animation: cointossright 1.4s linear infinite alternate;
 }
 
 .coin-hold {
-  height: 20vh;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -31,6 +30,11 @@
   justify-content: center;
   z-index: -1;
   transition: all 0.2s linear;
+}
+
+.coin-hold>img {
+  max-width: 200px;
+  z-index: 1;
 }
 
 .spot-ligh-hold {
@@ -118,6 +122,14 @@
 }
 
 @media screen and (min-width: 600px) {
+  .coin-hold>img {
+    max-width: 30vw;
+  }
+
+  .floating-coin {
+    width: auto;
+  }
+
   .floating-coin-left {
     left: 15%;
   }
