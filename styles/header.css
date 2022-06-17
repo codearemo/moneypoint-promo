@@ -5,12 +5,42 @@ header {
   padding: 5px 10px;
 }
 
-header img {
+.logo {
   height: 30px;
+}
+
+.countdown-hold {
+  display: flex;
+  gap: 10px;
+}
+
+.carlender-hold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 2px 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.countdown-hold img {
+  background-color: #9B51E0;
+  padding: 5px;
+  border-radius: 4px;
+  transform: scale(0.9);
+}
+
+.countdown span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
 }
 
 @media screen and (min-width: 600px) {
   header {
-    padding: 15px 6rem;
+    padding: 20px 2rem;
+  }
+  
+  .logo {
+    height: auto;
   }
 }
